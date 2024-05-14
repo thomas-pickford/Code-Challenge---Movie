@@ -31,7 +31,7 @@ app.get('/movies', (req, res) => {
                         movie_id: movie.id,
                         title: movie.title,
                         poster_image_url: poster_url + movie.poster_path,
-                        popularity_summary: movie.overview
+                        popularity_summary: `${movie.popularity} out of ${movie.vote_count} votes`
                     };
                 });
                 res.status(200).json(results)

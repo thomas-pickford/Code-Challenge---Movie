@@ -35,7 +35,7 @@
     margin: 10px;
     border-radius: 5px;
     border: 1px solid #ccc;
-    width: 85%;
+    width: 80%;
   }
 
   .search > button {
@@ -49,8 +49,8 @@
 
   .movies {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 20px;
   }
 
@@ -59,17 +59,19 @@
     border-radius: 10px;
     padding: 10px;
     margin-bottom: 10px;
-    width: 40%;
+    width: 20%;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   }
 
   .movie-details {
     display: flex;
     align-items: center;
+    flex-direction: column;
+    font-size: 20px;
   }
 
   .movie-image {
-    width: 100px;
+    width: 200px;
     height: auto;
     margin-right: 10px;
   }
